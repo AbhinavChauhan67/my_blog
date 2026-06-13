@@ -67,5 +67,13 @@ Pydroid3/
 .DS_Store
 Thumbs.db
 
-# Secret
+# Secrets
+
+*.pem
+*.key
+*.crt
+
+# Node.js (if used for frontend assets)
+
+node_modules/
 
