@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <main class="container">
+        
+        <article>
+            <header class="post-header">
+                <h1 class="post-title">Getting Started with Game Development</h1>
+                <div class="post-meta">By Author Name &bull; Published on June 7, 2026</div>
+            </header>
+
+            <div class="post-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum, sapien elementum finibus aliquet, diam diam volutpat sem, eget efficitur erat nulla at nisl. Vivamus congue pellentesque est, id viverra sem viverra at.</p>
+                
+                <p>Mauris condimentum dictum nisl vitae ultrices. Phasellus congue sapien sed interdum varius. Aliquam id ex sed erat sodales elementum quis sed ligula. Morbi rhoncus diam id varius facilisis.</p>
+                
+                <p>Proin aliquet hendrerit dolor, vel pulvinar erat tempor sit amet. In sed efficitur sapien. Sed quis neque vel mi aliquet iaculis nec id ligula. Ut a sapien risus. Aliquam pulvinar eros leo, a egestas ligula aliquet non.</p>
+                
+                <p><a href="{{ url_for('index') }}" class="read-more">&larr; Back to Home Feed</a></p>
+            </div>
+        </article>
+
+    </main>
+{% endblock %}
+

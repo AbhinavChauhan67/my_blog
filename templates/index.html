@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <main class="container">
+        
+        <header class="hero">
+            <h1>Welcome to My Blog</h1>
+            <p>Sharing thoughts on programming, design, and development.</p>
+        </header>
+
+        <section class="blog-grid">
+            
+            <article class="blog-card">
+                <div class="card-content">
+                    <div class="card-meta">Published on June 7, 2026</div>
+                    <h2 class="card-title"><a href="{{ url_for('post') }}">Getting Started with Game Development</a></h2>
+                    <p class="card-excerpt">Discover the essential tools, engines, and scripting workflows you need to build your very first indie game from scratch.</p>
+                    <a href="{{ url_for('post') }}" class="read-more">Read More &rarr;</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="card-content">
+                    <div class="card-meta">Published on June 5, 2026</div>
+                    <h2 class="card-title"><a href="{{ url_for('post') }}">Mastering CSS Flexbox and Grid</a></h2>
+                    <p class="card-excerpt">Stop guessing layouts. Learn how to combine Flexbox and Grid to design highly responsive templates without struggling.</p>
+                    <a href="{{ url_for('post') }}" class="read-more">Read More &rarr;</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="card-content">
+                    <div class="card-meta">Published on June 1, 2026</div>
+                    <h2 class="card-title"><a href="{{ url_for('post') }}">Why UI/UX Matters in Modern Design</a></h2>
+                    <p class="card-excerpt">Good user experiences don't happen by accident. Explore the core principles of building intuitive web platforms.</p>
+                    <a href="{{ url_for('post') }}" class="read-more">Read More &rarr;</a>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+{% endblock %}
+
+
+

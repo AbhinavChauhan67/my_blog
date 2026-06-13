@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <main class="container">
+        <header class="hero">
+            <h1>Support Center</h1>
+            <p>Find quick answers to common questions or submit a technical assistance ticket.</p>
+        </header>
+
+        <section class="faq-section">
+            <h2 style="text-align: center; margin-bottom: 1.5rem;">Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">How can I contribute an article to this blog?</div>
+                <div class="faq-answer">You can reach out directly via our Contact page with your draft pitch. We accept high-quality guides surrounding design frameworks and development tools.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Are the code snippets free to use commercially?</div>
+                <div class="faq-answer">Yes! Everything published on DevBlog is under the MIT License, meaning you can freely use them in personal and commercial engineering applications.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I subscribe to email newsletters?</div>
+                <div class="faq-answer">We are currently implementing our RSS and newsletter delivery platform. Stay tuned for a platform update coming next month!</div>
+            </div>
+        </section>
+
+        <h2 style="text-align: center; margin-bottom: 1.5rem;">Still need help? Open a Ticket</h2>
+        <div class="form-card">
+            <form id="supportForm">
+                <div class="form-group">
+                    <label for="supportEmail">Your Registered Email</label>
+                    <input type="email" id="supportEmail" class="form-control" placeholder="user@domain.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="issueType">Issue Category</label>
+                    <select id="issueType" class="form-control" style="background: var(--white);">
+                        <option>Account Access & Security</option>
+                        <option>Content Clarification Request</option>
+                        <option>Website Bug Report</option>
+                        <option>Other Help</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Describe the Issue</label>
+                    <textarea id="description" class="form-control" rows="4" placeholder="Please provide details..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit Support Ticket</button>
+            </form>
+        </div>
+    </main>
+{% endblock %}
