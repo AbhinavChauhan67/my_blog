@@ -67,9 +67,5 @@ Pydroid3/
 .DS_Store
 Thumbs.db
 
-# Secrets
-
-*.pem
-*.key
-*.crt
+# Secret
 
