@@ -1,0 +1,75 @@
+# Python
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+
+venv/
+.venv/
+env/
+ENV/
+
+# Flask
+
+instance/
+.webassets-cache/
+
+# Environment variables
+
+.env
+.env.*
+
+# Databases
+
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+
+*.log
+
+# Testing & Coverage
+
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# Build artifacts
+
+build/
+dist/
+*.egg-info/
+
+# IDE / Editor files
+
+.vscode/
+.idea/
+
+# Android / Pydroid
+
+Pydroid3/
+*.apk
+
+# Termux
+
+.termux/
+
+# Jupyter
+
+.ipynb_checkpoints/
+
+# OS files
+
+.DS_Store
+Thumbs.db
+
+# Secrets
+
+*.pem
+*.key
+*.crt
+
